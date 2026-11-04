@@ -1,0 +1,202 @@
+.about-dialog {
+  width: min(512px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100vh - 32px);
+  padding: 0;
+  overflow: auto;
+  color: #e5e7eb;
+  border: 1px solid #ff4655;
+  border-radius: 9px;
+  background: #0e131c;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 65%);
+  scrollbar-color: #3a424e #0e131c;
+  scrollbar-width: thin;
+}
+
+.about-dialog::backdrop {
+  background: rgb(0 0 0 / 82%);
+  backdrop-filter: blur(7px);
+}
+
+.about-dialog-content {
+  padding: 25px;
+}
+
+.about-dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #55242d;
+}
+
+.about-brand-mark {
+  display: grid;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  place-items: end center;
+  overflow: hidden;
+  border: 1px solid #ff4655;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #343d4b 0 39%, #171c25 40%);
+}
+
+.about-brand-mark span {
+  width: 100%;
+  padding: 3px 0;
+  color: white;
+  background: rgb(14 18 26 / 88%);
+  font-size: 8px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+}
+
+.about-dialog-header h2 {
+  flex: 1;
+  margin: 0;
+  color: #ff4655;
+  font-size: clamp(18px, 5vw, 25px);
+  font-weight: 950;
+  letter-spacing: 0.6px;
+  line-height: 1.15;
+}
+
+.about-dialog-close {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: #a0a8b4;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.about-dialog-close:hover {
+  color: #fff;
+}
+
+.about-dialog-body {
+  padding: 16px 0 18px;
+}
+
+.about-dialog-body p {
+  margin: 0 0 12px;
+  color: #c1c6ce;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.about-highlight {
+  color: #ff4655;
+}
+
+.about-radianite {
+  color: #00ddc5;
+}
+
+.about-mission {
+  margin-top: 14px;
+  padding: 12px;
+  color: #c1c6ce;
+  border-left: 3px solid #ff4655;
+  border-radius: 4px;
+  background: #191f29;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.about-mission strong {
+  color: #ff4655;
+}
+
+.about-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-dialog-dismiss {
+  min-height: 34px;
+  padding: 0 16px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  background: #ff4655;
+  cursor: pointer;
+  font: inherit;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.about-dialog-dismiss:hover {
+  background: #e83b4a;
+}
+
+.about-dialog button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+html[data-theme="light"] .about-dialog {
+  color: #202633;
+  border-color: #ff4655;
+  background: #f9fafc;
+  box-shadow: 0 24px 80px rgb(22 29 40 / 30%);
+}
+
+html[data-theme="light"] .about-dialog::backdrop {
+  background: rgb(27 34 46 / 55%);
+}
+
+html[data-theme="light"] .about-dialog-header {
+  border-bottom-color: #edc4c9;
+}
+
+html[data-theme="light"] .about-brand-mark {
+  background: linear-gradient(145deg, #dce2eb 0 39%, #f9fafc 40%);
+}
+
+html[data-theme="light"] .about-brand-mark span {
+  color: #202633;
+  background: rgb(255 255 255 / 90%);
+}
+
+html[data-theme="light"] .about-dialog-body p {
+  color: #394252;
+}
+
+html[data-theme="light"] .about-mission {
+  color: #394252;
+  background: #edf0f5;
+}
+
+html[data-theme="light"] .about-dialog-close {
+  color: #606a79;
+}
+
+html[data-theme="light"] .about-dialog-close:hover {
+  color: #202633;
+}
+
+@media (max-width: 520px) {
+  .about-dialog-content {
+    padding: 18px;
+  }
+
+  .about-dialog-body p {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-dialog::backdrop {
+    backdrop-filter: none;
+  }
+}

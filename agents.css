@@ -1,0 +1,152 @@
+.agents-panel {
+  min-height: calc(100vh - 63px);
+  margin-left: clamp(380px, 30vw, 420px);
+  padding: 98px clamp(20px, 4vw, 52px) 40px 0;
+}
+
+.agents-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #48252e;
+}
+
+.agents-title-group {
+  min-width: 0;
+}
+
+.agents-kicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 3px;
+  color: #a0a5ae;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  white-space: nowrap;
+}
+
+.agents-kicker span:first-child {
+  color: #ff4655;
+}
+
+.kicker-divider {
+  color: #606875;
+}
+
+.agents-title {
+  margin: 0;
+  color: #f3f4f6;
+  font-size: clamp(28px, 3.2vw, 38px);
+  font-weight: 950;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.agents-title span {
+  color: #ff4655;
+}
+
+.agent-filters {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+  max-width: 250px;
+}
+
+.agent-filter {
+  min-height: 26px;
+  padding: 0 11px;
+  color: #cbd0d9;
+  border: 1px solid #303744;
+  border-radius: 4px;
+  background: #191f29;
+  cursor: pointer;
+  font: inherit;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.agent-filter:hover {
+  border-color: #596273;
+  background: #222a36;
+}
+
+.agent-filter.is-active {
+  color: #fff;
+  border-color: #ff4655;
+  background: #ff4655;
+}
+
+.agent-filter:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.agent-card[hidden] {
+  display: none;
+}
+
+.agent-search-empty {
+  margin: 20px 0 0;
+  color: #a0a5ae;
+  font-size: 13px;
+}
+
+.agent-search-empty[hidden] {
+  display: none;
+}
+
+@media (max-width: 1000px) and (min-width: 761px) {
+  .agents-panel {
+    margin-left: 370px;
+    padding-right: 22px;
+  }
+
+  .agents-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .agent-filters {
+    justify-content: flex-start;
+    max-width: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .agents-panel {
+    min-height: auto;
+    margin: 20px 16px 32px;
+    padding: 0;
+  }
+
+  .agents-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 15px;
+  }
+
+  .agents-kicker {
+    flex-wrap: wrap;
+    font-size: 8px;
+  }
+
+  .agents-title {
+    font-size: clamp(26px, 8vw, 36px);
+  }
+
+  .agent-filters {
+    justify-content: flex-start;
+    max-width: none;
+  }
+}

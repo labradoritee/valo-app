@@ -1,0 +1,294 @@
+.agent-dialog {
+  width: min(728px, calc(100vw - 32px));
+  max-width: none;
+  max-height: min(722px, calc(100vh - 40px));
+  padding: 0;
+  overflow: auto;
+  color: #e5e7eb;
+  border: 1px solid #00d9c2;
+  border-radius: 11px;
+  background: #0e131c;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 65%);
+  scrollbar-color: #3a424e #0e131c;
+  scrollbar-width: thin;
+}
+
+.agent-dialog::backdrop {
+  background: rgb(0 0 0 / 82%);
+  backdrop-filter: blur(7px);
+}
+
+.agent-dialog-content {
+  padding: 26px;
+}
+
+.agent-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #252d39;
+}
+
+.agent-dialog-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agent-dialog-role {
+  padding: 5px 9px;
+  color: #00e0c6;
+  border: 1px solid #00796e;
+  border-radius: 4px;
+  background: #063b3a;
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.agent-dialog-origin {
+  color: #8d95a2;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.agent-dialog-title {
+  margin: 3px 0 0;
+  color: #00e0c6;
+  font-size: 42px;
+  font-weight: 950;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.agent-dialog-close {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  color: #a0a8b4;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.agent-dialog-close:hover {
+  color: #fff;
+}
+
+.agent-dialog-body {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.22fr);
+  gap: 26px;
+  padding: 20px 0 22px;
+}
+
+.agent-dossier-portrait {
+  height: 168px;
+  overflow: hidden;
+  border: 1px solid #006f68;
+  border-radius: 6px;
+  background: #141d27;
+}
+
+.agent-dossier-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 24%;
+}
+
+.agent-dialog-section-title {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 12px;
+  color: #00ddc5;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+}
+
+.agent-dialog-section-title::before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.dossier-title {
+  margin-top: 12px;
+  color: #ff4655;
+}
+
+.dossier-title::before {
+  background: #ff4655;
+}
+
+.agent-dossier-copy {
+  margin: 0;
+  color: #c1c6ce;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.agent-facts {
+  display: grid;
+  gap: 7px;
+  margin: 14px 0 0;
+  padding: 12px;
+  border: 1px solid #252d39;
+  border-radius: 4px;
+  background: #090d13;
+}
+
+.agent-facts div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.agent-facts dt {
+  color: #717a87;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.agent-facts dd {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 8px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.agent-facts div:last-child dd {
+  color: #00ddc5;
+}
+
+.agent-approval {
+  margin: 16px 0 0;
+  padding-top: 12px;
+  color: #717a87;
+  border-top: 1px solid #252d39;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  line-height: 1.8;
+}
+
+.agent-abilities {
+  min-width: 0;
+}
+
+.agent-ability-list {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.agent-ability {
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #252d39;
+  border-radius: 4px;
+  background: #090d13;
+}
+
+.ability-key {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  color: #ff4655;
+  border: 1px solid #ff4655;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.agent-ability h4 {
+  margin: 1px 0 4px;
+  color: #dce0e6;
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.agent-ability p {
+  margin: 0;
+  color: #aeb5bf;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.agent-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 13px;
+  border-top: 1px solid #252d39;
+}
+
+.agent-dialog-dismiss {
+  min-height: 34px;
+  padding: 0 17px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  background: #ff4655;
+  cursor: pointer;
+  font: inherit;
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.agent-dialog-dismiss:hover {
+  background: #e83b4a;
+}
+
+.agent-dialog button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .agent-dialog {
+    max-height: calc(100vh - 20px);
+    border-radius: 8px;
+  }
+
+  .agent-dialog-content {
+    padding: 18px;
+  }
+
+  .agent-dialog-title {
+    font-size: 34px;
+  }
+
+  .agent-dialog-body {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 16px 0;
+  }
+
+  .agent-dossier-portrait {
+    height: 190px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .agent-dialog::backdrop {
+    backdrop-filter: none;
+  }
+}

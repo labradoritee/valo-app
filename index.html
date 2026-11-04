@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="briefing.css">
+    <link rel="stylesheet" href="agents.css">
+    <link rel="stylesheet" href="agent-card.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="agent-modal.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" 
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="site-header" id="page-top">
+        <nav class="site-navbar" aria-label="Ana gezinme">
+            <a class="navbar-brand" href="#" aria-label="Valorant Protokol Arşivi ana sayfa">
+                <span class="brand-mark" aria-hidden="true"><span>VALO</span></span>
+                <span class="brand-copy">
+                    <span class="brand-title">VALORANT</span>
+                    <span class="brand-subtitle">PROTOKOL ARŞİVİ</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navbar-content">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navbar-content" id="navbar-content">
+                <button class="about-link" type="button" data-open-about aria-haspopup="dialog" aria-controls="about-modal">
+                    <span class="about-icon" aria-hidden="true">!</span>
+                    <span>HAKKINDA</span>
+                </button>
+
+                <div class="server-status" role="status">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span>AJAN DOSYALARI V8.11 // ÇEVRİMİÇİ</span>
+                </div>
+
+                <form class="navbar-search" role="search">
+                    <label class="search-field">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m15.5 15.5 4.2 4.2"></path></svg>
+                        <input id="agent-search" type="search" placeholder="Ajan ara (Jett, Viper...)" aria-label="Ajan ara">
+                    </label>
+                    <button class="search-submit" type="submit">ARA</button>
+                </form>
+
+                <button class="theme-button" type="button" aria-label="Aydınlık moda geç">
+                    <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.4 8.4 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path></svg>
+                    <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="briefing-layout">
+        <aside class="briefing-card" aria-labelledby="briefing-title">
+            <div class="briefing-topline">
+                <span class="classification"><span class="classification-dot"></span>GİZLİ // SEVİYE 5</span>
+                <span class="file-status">AKTİF DOSYA</span>
+            </div>
+            <p class="file-category">// DOSYA: İLK IŞIK &amp; PROTOKOL</p>
+            <h1 class="briefing-title" id="briefing-title">VALORANT <span>BRİFİNGİ</span></h1>
+
+            <div class="briefing-stats" aria-label="Dosya özeti">
+                <div class="stat-box">
+                    <span class="stat-label">AJANLAR</span>
+                    <strong class="stat-value stat-agents">24+ BİRİM</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">TEHDİT</span>
+                    <strong class="stat-value stat-threat">MAKSİMUM</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">EVREN</span>
+                    <strong class="stat-value stat-universe">ALFA // OMEGA</strong>
+                </div>
+            </div>
+
+            <div class="briefing-sections">
+                <section class="briefing-entry entry-red">
+                    <h2><span class="entry-dot"></span>01 // İLK IŞIK (FIRST LIGHT)</h2>
+                    <p>2039 yılında Dünya genelinde yaşanan esrarengiz kozmik olayla gezegenimiz kalıcı bir dönüşüm geçirdi. Bu hadiseyle birlikte doğada benzeri görülmemiş mucizevi bir element ortaya çıktı: <strong>Radyanit.</strong></p>
+                </section>
+
+                <section class="briefing-entry entry-teal">
+                    <h2><span class="entry-dot"></span>02 // RADYANİTLER &amp; TEKNOLOJİ</h2>
+                    <p>İlk ışık radyasyonuna maruz kalan bazı insanlar doğaüstü yetenekler kazandı (Jett, Phoenix, Reyna). Diğer taraftan üstün mühendislik ve siber teçhizat kullanan dehalar (Killjoy, Cypher, Chamber) bu güce karşı denge unsuru oluşturdu.</p>
+                </section>
+
+                <section class="briefing-entry entry-red">
+                    <h2><span class="entry-dot"></span>03 // VALORANT PROTOKOLÜ</h2>
+                    <p>Dünya'yı yaklaşan küresel felaketlerden korumak amacıyla <strong>Brimstone ve Viper</strong> liderliğinde gizli bir askeri gölge teşkilat kuruldu. Protokol, bağımsız ve uluslararası operasyon yetkisine sahiptir.</p>
+                </section>
+
+                <section class="briefing-entry entry-purple">
+                    <h2><span class="entry-dot"></span>04 // OMEGA DÜNYASI &amp; SPIKE</h2>
+                    <p>Çoklu evren kapılarının açılmasıyla paralel ayna dünyamız olan Omega Dünyası ajanları, gezegenimizin Radyanit kaynaklarını sömürmek ve Spike cihazlarıyla çekirdekten patlatmak üzere saldırıya geçti.</p>
+                </section>
+            </div>
+        </aside>
+        <section class="agents-panel" aria-labelledby="agents-title">
+            <div class="agents-heading">
+                <div class="agents-title-group">
+                    <p class="agents-kicker"><span>// PROTOKOL DOSYALARI</span><span class="kicker-divider">·</span> FAZ 1 - 24 KAYITLI BİRİM</p>
+                    <h1 class="agents-title" id="agents-title">VALORANT <span>AJANLARI</span></h1>
+                </div>
+                <div class="agent-filters" role="group" aria-label="Ajan rolüne göre filtrele">
+                    <button class="agent-filter is-active" type="button" data-agent-filter="all" aria-pressed="true">TÜMÜ</button>
+                    <button class="agent-filter" type="button" data-agent-filter="duelist" aria-pressed="false">DÜELLOCU</button>
+                    <button class="agent-filter" type="button" data-agent-filter="initiator" aria-pressed="false">ÖNCÜ</button>
+                    <button class="agent-filter" type="button" data-agent-filter="controller" aria-pressed="false">KONTROL</button>
+                    <button class="agent-filter" type="button" data-agent-filter="sentinel" aria-pressed="false">GÖZCÜ</button>
+                </div>
+            </div>
+            <div class="agent-card-grid">
+                <article class="agent-card" data-agent-modal-trigger="jett" aria-label="Jett ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">DÜELLOCU // GÜNEY KORE</span>
+                        <span class="agent-number">#01</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png"
+                            alt="Jett ajan portresi"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">JETT</h2>
+                            <p class="agent-description">Rüzgârın Çevik Savaşçısı</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-controls="jett-modal" aria-label="Jett ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="phoenix" aria-label="Phoenix ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">DÜELLOCU // BİRLEŞİK KRALLIK</span>
+                        <span class="agent-number">#02</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png" alt="Phoenix ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">PHOENIX</h2>
+                            <p class="agent-description">Alevlerin Parlayan Yıldızı</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Phoenix ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="reyna" aria-label="Reyna ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">DÜELLOCU // MEKSİKA</span>
+                        <span class="agent-number">#11</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png" alt="Reyna ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">REYNA</h2>
+                            <p class="agent-description">Ruh Emici Yırtıcı</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Reyna ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="raze" aria-label="Raze ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">DÜELLOCU // BREZİLYA</span>
+                        <span class="agent-number">#12</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayicon.png" alt="Raze ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">RAZE</h2>
+                            <p class="agent-description">Patlayıcı Sanatçısı</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Raze ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="viper" aria-label="Viper ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">KONTROL UZMANI // ABD</span>
+                        <span class="agent-number">#03</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png" alt="Viper ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">VIPER</h2>
+                            <p class="agent-description">Zehir Uzmanı Kimyager</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Viper ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="omen" aria-label="Omen ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">KONTROL UZMANI // BİLİNMİYOR</span>
+                        <span class="agent-number">#05</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png" alt="Omen ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">OMEN</h2>
+                            <p class="agent-description">Gölgelerin Hayaleti</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Omen ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="sova" aria-label="Sova ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">ÖNCÜ // RUSYA</span>
+                        <span class="agent-number">#06</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayicon.png" alt="Sova ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">SOVA</h2>
+                            <p class="agent-description">Tundranın Keskin Gözcüsü</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Sova ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="sage" aria-label="Sage ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">GÖZCÜ // ÇİN</span>
+                        <span class="agent-number">#07</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png" alt="Sage ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">SAGE</h2>
+                            <p class="agent-description">Yaşam ve Yeşim Taşı Koruyucusu</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Sage ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="cypher" aria-label="Cypher ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">GÖZCÜ // FAS</span>
+                        <span class="agent-number">#08</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayicon.png" alt="Cypher ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">CYPHER</h2>
+                            <p class="agent-description">Bilgi Tüccarı &amp; Gözetmen</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Cypher ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="brimstone" aria-label="Brimstone ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">KONTROL UZMANI // ABD</span>
+                        <span class="agent-number">#04</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayicon.png" alt="Brimstone ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">BRIMSTONE</h2>
+                            <p class="agent-description">VALORANT Komutanı</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Brimstone ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="killjoy" aria-label="Killjoy ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">GÖZCÜ // ALMANYA</span>
+                        <span class="agent-number">#09</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png" alt="Killjoy ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">KILLJOY</h2>
+                            <p class="agent-description">Alman Dahi Mühendis</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Killjoy ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+                <article class="agent-card" data-agent-modal-trigger="chamber" aria-label="Chamber ajan dosyasını aç" tabindex="0">
+                    <div class="agent-card-topline">
+                        <span class="agent-role">GÖZCÜ // FRANSA</span>
+                        <span class="agent-number">#18</span>
+                    </div>
+                    <div class="agent-portrait-wrap">
+                        <img class="agent-portrait" src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png" alt="Chamber ajan portresi" loading="lazy">
+                    </div>
+                    <div class="agent-card-footer">
+                        <div>
+                            <h2 class="agent-name">CHAMBER</h2>
+                            <p class="agent-description">Centilmen Silah Tasarımcısı</p>
+                        </div>
+                        <button class="agent-details-link" type="button" aria-haspopup="dialog" aria-label="Chamber ajan dosyasını incele">İNCELE <span aria-hidden="true">→</span></button>
+                    </div>
+                </article>
+            </div>
+            <p class="agent-search-empty" role="status" hidden>Ajan bulunamadı.</p>
+        </section>
+    </main>
+    <dialog class="about-dialog" id="about-modal" aria-labelledby="about-title">
+        <div class="about-dialog-content">
+            <header class="about-dialog-header">
+                <span class="about-brand-mark" aria-hidden="true"><span>VALO</span></span>
+                <h2 id="about-title">VALORANT HAKKINDA</h2>
+                <button class="about-dialog-close" type="button" data-close-about aria-label="Hakkında penceresini kapat">×</button>
+            </header>
+            <div class="about-dialog-body">
+                <p><strong class="about-highlight">VALORANT</strong>, Riot Games tarafından geliştirilen ve First Light (İlk Işık) olayı sonrası yakın gelecekte geçen, 5'e 5 karakter tabanlı taktiksel birinci şahıs nişancı oyunudur.</p>
+                <p>Dünyanın dört bir yanından gelen ve <strong class="about-radianite">Radyanit</strong> maddesinin etkisiyle olağanüstü güçlere sahip olan veya ileri teknoloji teçhizat kullanan seçkin ajanlar, "VALORANT Protokolü" adı verilen gizli teşkilatta bir araya gelmiştir.</p>
+                <div class="about-mission"><strong>GÖREV:</strong> Çift-Dünya krizini çözmek, Omega Dünyası'ndan gelen tehditleri nötralize etmek ve Spike patlamalarını engellemektir.</div>
+            </div>
+            <footer class="about-dialog-footer">
+                <button class="about-dialog-dismiss" type="button" data-close-about>ANLADIM &amp; KAPAT</button>
+            </footer>
+        </div>
+    </dialog>
+    <template id="agent-dialog-template">
+        <dialog class="agent-dialog">
+            <div class="agent-dialog-content">
+                <header class="agent-dialog-header">
+                    <div>
+                        <div class="agent-dialog-meta">
+                            <span class="agent-dialog-role">DÜELLOCU</span>
+                            <span class="agent-dialog-origin"></span>
+                        </div>
+                        <h2 class="agent-dialog-title"></h2>
+                    </div>
+                    <button class="agent-dialog-close" type="button" data-close-agent-modal aria-label="Ajan dosyasını kapat">×</button>
+                </header>
+                <div class="agent-dialog-body">
+                    <section class="agent-dossier">
+                        <div class="agent-dossier-portrait"><img alt=""></div>
+                        <h3 class="agent-dialog-section-title dossier-title">GİZLİ PROTOKOL DOSYASI &amp; HİKAYESİ</h3>
+                        <p class="agent-dossier-copy"></p>
+                        <dl class="agent-facts">
+                            <div><dt>KOD ADI:</dt><dd data-fact="codename"></dd></div>
+                            <div><dt>GERÇEK ADI:</dt><dd data-fact="realName"></dd></div>
+                            <div><dt>GÜÇ KAYNAĞI:</dt><dd data-fact="power"></dd></div>
+                        </dl>
+                        <p class="agent-approval">KAYIT DURUMU: ONAYLANDI // PROTOKOL LİDERİ: BRIMSTONE</p>
+                    </section>
+                    <section class="agent-abilities">
+                        <h3 class="agent-dialog-section-title">OYUN İÇİ YETENEKLER</h3>
+                        <ul class="agent-ability-list"></ul>
+                    </section>
+                </div>
+                <footer class="agent-dialog-footer">
+                    <button class="agent-dialog-dismiss" type="button" data-close-agent-modal>RAPORU KAPAT</button>
+                </footer>
+            </div>
+        </dialog>
+    </template>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-credit">
+                <a class="footer-mark" href="#page-top" aria-label="Sayfanın başına dön">
+                    <span>VALO</span>
+                </a>
+                <p>VALORANT Protokolü Hayran Arşivi © 2024. Tüm hakları Riot Games'e aittir.</p>
+            </div>
+            <a class="footer-back-to-top" href="#page-top">Yukarı Çık ↑</a>
+        </div>
+    </footer>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/agent-modal.js" defer></script>
+    <script src="scripts/site-controls.js" defer></script>
+    <script src="scripts/about-modal.js" defer></script>
+</body>
+</html>
